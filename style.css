@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -15,19 +16,24 @@ h1 {
 }
 
 .left-sidebar {
+  display: flex;
+  flex-direction: column;
   background: red;
-  flex-grow: 5;
+  flex: 0 0 317px;
   margin-right: 20px;
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
   background: green;
-  width: 50%;
 }
 
 .right-sidebar {
+  display: flex;
+  flex-direction: column;
   background: blue;
-  flex-grow: 4;
+  flex: 0 0 258px;
   margin-left: 23px;
 }
 

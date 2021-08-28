@@ -9,6 +9,38 @@ body {
   background-color: #e5e5e5;
 }
 
+.text {
+  font-size: 16px;
+  line-height: 20.83px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.text--grey-heading {
+  color: #595959;
+  font-weight: 700;
+}
+
+.text--grey-body {
+  color: #65676b;
+  font-weight: 400;
+}
+
+.text--bold-body {
+  font-weight: 700;
+  color: black;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+}
+
+.text--grey {
+  color: #65676b;
+}
+
 .header {
   display: block;
   position: sticky;
@@ -45,6 +77,11 @@ body {
   background: blue;
   flex: 0 0 258px;
   margin-left: 23px;
+}
+
+.milestones,
+.trending {
+  padding: 20px 24px 20px 20px;
 }
 
 /* Picking correct screen widths */

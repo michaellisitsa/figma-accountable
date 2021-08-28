@@ -1,21 +1,31 @@
+:root {
+  --navHeight: 72px;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #e5e5e5;
 }
 
-h1 {
-  color: red;
+.header {
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: var(--navHeight);
 }
 
-.rectangle-container {
+.main-body-columns {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  margin: 0 100px;
+  margin: 42px 100px 0px;
 }
 
-.left-sidebar {
+.main-body-columns__left {
   display: flex;
   flex-direction: column;
   background: red;
@@ -23,13 +33,13 @@ h1 {
   margin-right: 20px;
 }
 
-.main {
+.main-body-columns__middle {
   display: flex;
   flex-direction: column;
   background: green;
 }
 
-.right-sidebar {
+.main-body-columns__right {
   display: flex;
   flex-direction: column;
   background: blue;
@@ -37,41 +47,43 @@ h1 {
   margin-left: 23px;
 }
 
-@media (max-width: 768px) {
+/* Picking correct screen widths */
+/* https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design */
+@media (max-width: 1007px) {
   body {
     margin: 0;
     padding: 0;
   }
 
-  .rectangle-container {
+  .main-body-columns {
     display: block;
     width: auto;
     min-width: 0;
-    margin: 0 40px;
+    margin: 42px 40px 0;
   }
 
-  .left-sidebar {
+  .main-body-columns__left {
     margin: 0;
   }
 
-  .right-sidebar {
+  .main-body-columns__right {
     margin: 0;
   }
 
-  .main {
+  .main-body-columns__middle {
     width: inherit;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   body {
     margin: 0;
     padding: 0;
   }
 
-  .rectangle-container {
+  .main-body-columns {
     display: block;
     width: 100%;
-    margin: 0;
+    margin: 42px 0 0;
   }
 }

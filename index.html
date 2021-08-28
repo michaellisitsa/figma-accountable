@@ -4,30 +4,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="rectangle-container">
-      <div class="left-sidebar">
-        <div class="milestones">
+    <header class="header">
+      <div class="header__container header__container--left-aligned">
+        <i class="logo logo--website"></i>
+      </div>
+      <div class="header__container header__container--center-aligned">
+        <nav class="menu">
+          <ul class="menu__links">
+            <li>Feed</li>
+            <li>Milestones</li>
+            <li>Groups</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__container header__container--right-aligned">
+        <button class="button button--notification-bell">Bell ring</button>
+        <i class="icon icon--account-holder"></i>
+        <a class="link link--account-holder">Evans Jerry</a>
+      </div>
+    </header>
+    <div class="main-body-columns">
+      <div class="main-body-columns__left">
+        <section class="milestones">
+          <h1>Milestones</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
             exercitationem! Amet labore velit necessitatibus dolorem asperiores
             placeat quod delectus quos! A, ipsum magnam. Sed eveniet, nihil fuga
             quasi eaque nobis! Odit a quaerat nulla eos nesciunt iusto nostrum
           </p>
-        </div>
+        </section>
       </div>
-      <div class="main">
-        <div class="search">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            delectus! Labore perspiciatis est sit mollitia animi magnam expedita
-            cupiditate quaerat. Laudantium at, excepturi omnis ipsum rerum
-            ratione quis iure deserunt? Temporibus laborum aliquam nemo quos
-          </p>
-        </div>
-        <div class="blog">Search Here</div>
+      <div class="main-body-columns__middle">
+        <section class="search-bar">
+          <p>Search Here</p>
+        </section>
+        <section class="post-feed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+          delectus! Labore perspiciatis est sit mollitia animi magnam expedita
+          cupiditate quaerat. Laudantium at, excepturi omnis ipsum rerum ratione
+          quis iure deserunt? Temporibus laborum aliquam nemo quos
+        </section>
       </div>
-      <div class="right-sidebar">
-        <div class="livestream">
+      <div class="main-body-columns__right">
+        <section class="livestream">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
             ducimus! Earum id similique repellendus repudiandae non voluptates
@@ -35,8 +55,8 @@
             modi enim, porro beatae. Repellendus dolore quisquam accusamus
             consequatur, veniam recusandae alias praesentium ut.
           </p>
-        </div>
-        <div class="trending"></div>
+        </section>
+        <section class="trending-posts"></section>
       </div>
     </div>
     <script src="script.js"></script>

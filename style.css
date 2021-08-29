@@ -31,10 +31,13 @@ body {
 }
 
 p {
+  display: block;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.83px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .text--grey {
@@ -51,16 +54,31 @@ p {
   height: var(--navHeight);
 }
 
+.icon {
+  display: inline;
+}
+
 .main-body-columns {
   display: flex;
   flex-direction: row;
   margin: 42px 100px 0px;
 }
 
+.card {
+  background: #ffffff;
+  border: 0px solid;
+  border-radius: 4px;
+}
+
+.view-more-link {
+  color: #f9690e;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
 .main-body-columns__left {
   display: flex;
   flex-direction: column;
-  background: red;
   flex: 0 0 317px;
   margin-right: 20px;
 }
@@ -68,13 +86,11 @@ p {
 .main-body-columns__middle {
   display: flex;
   flex-direction: column;
-  background: green;
 }
 
 .main-body-columns__right {
   display: flex;
   flex-direction: column;
-  background: blue;
   flex: 0 0 258px;
   margin-left: 23px;
 }
@@ -82,6 +98,17 @@ p {
 .milestones,
 .trending {
   padding: 20px 24px 20px 20px;
+}
+
+.milestones__post {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.icon--profile-pic {
+  margin-right: 12px;
 }
 
 /* Picking correct screen widths */

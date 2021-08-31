@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #e5e5e5;
+  background: #f4f5f7;
 }
 
 .text {
@@ -43,6 +43,9 @@ body {
 .text--bold-body {
   font-weight: 700;
   color: black;
+}
+
+.text--margin-bot {
   margin-bottom: 12px;
 }
 
@@ -91,6 +94,7 @@ p {
   color: #f9690e;
   text-decoration: underline;
   text-underline-offset: 1px;
+  font-weight: 700;
 }
 
 .main-body-columns__left {
@@ -103,6 +107,7 @@ p {
 .main-body-columns__middle {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .main-body-columns__right {
@@ -157,6 +162,35 @@ p {
   padding-left: 24px;
 }
 
+.icon--add-image {
+  z-index: 10;
+  width: 24px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.post__wrapper {
+  padding: 16px 24px;
+}
+
+.post__pic-namedate {
+  display: inline-block;
+}
+
+.post__pic {
+  display: inline-block;
+}
+
+.post__namedate {
+  margin-left: 12px;
+  display: inline-block;
+}
+
+.post__image {
+  width: 100%;
+}
+
 .trending__post:first-child {
   margin-top: 24px;
 }
@@ -169,20 +203,43 @@ p {
   margin: 24px 0;
 }
 
-.trending__subscript {
+.side-by-side {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
-.text--float:first-child {
+.side-by-side--bot-margin {
+  margin-bottom: 16px;
+}
+
+.left-right-align--border {
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+
+.notification--report {
+  padding: 6px 12px;
+}
+
+.report-flag {
+  display: inline;
+  margin-right: 10px;
+}
+
+.text--inline-block {
+  display: inline;
+}
+
+.left-right-align:first-child {
   flex-grow: 10;
 }
 
-.text--float:last-child {
+.left-right-align:last-child {
   padding: 0 1px;
 }
 
-.icon--profile-pic {
+.icon--right-margin {
   margin-right: 12px;
 }
 

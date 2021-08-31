@@ -25,7 +25,7 @@
       </div>
       <div class="header__container header__container--right-aligned">
         <button class="button button--notification-bell">Bell ring</button>
-        <img src="Assets/User Avatar 01.svg" class="icon icon--profile-pic" />
+        <img src="Assets/User Avatar 01.svg" class="icon icon--right-margin" />
         <a class="link link--account-holder">Evans Jerry</a>
       </div>
     </header>
@@ -38,7 +38,7 @@
               <div class="milestones__post">
                 <img
                   src="Assets/User Avatar 02.svg"
-                  class="icon icon--profile-pic"
+                  class="icon icon--right-margin"
                 />
                 <p class="text text--grey-body">
                   Accountable has now raised $24m in seed funds! 😱
@@ -47,7 +47,7 @@
               <div class="milestones__post">
                 <img
                   src="Assets/User Avatar 03.svg"
-                  class="icon icon--profile-pic"
+                  class="icon icon--right-margin"
                 />
                 <p class="text text--grey-body">
                   Quit my job to work full time on my side project.
@@ -56,7 +56,7 @@
               <div class="milestones__post">
                 <img
                   src="Assets/User Avatar 04.svg"
-                  class="icon icon--profile-pic"
+                  class="icon icon--right-margin"
                 />
                 <p class="text text--grey-body">
                   Reached $2400 ARR, baby steps.
@@ -65,7 +65,7 @@
               <div class="milestones__post">
                 <img
                   src="Assets/User Avatar 05.svg"
-                  class="icon icon--profile-pic"
+                  class="icon icon--right-margin"
                 />
                 <p class="text text--grey-body">
                   Hired our first employee in our startup!!
@@ -81,7 +81,7 @@
           <section class="search">
             <img
               src="Assets/User Avatar 01.svg"
-              class="icon icon--profile-pic icon--fixed-sized"
+              class="icon icon--right-margin icon--fixed-sized"
             />
             <div class="seach__wrapper">
               <input
@@ -90,27 +90,73 @@
                 placeholder="Search Here"
               />
             </div>
+            <img src="Assets/Add Image.svg" class="icon icon--add-image" />
           </section>
         </div>
         <div class="card">
-          <section class="post-feed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            delectus! Labore perspiciatis est sit mollitia animi magnam expedita
-            cupiditate quaerat. Laudantium at, excepturi omnis ipsum rerum
-            ratione quis iure deserunt? Temporibus laborum aliquam nemo quos
+          <section class="post__text-only">
+            <div class="post__wrapper">
+              <div class="side-by-side side-by-side--bot-margin">
+                <div class="left-right-align">
+                  <div class="post__pic-namedate">
+                    <div class="post__pic">
+                      <img src="Assets/User Avatar 05.svg" class="icon" />
+                    </div>
+                    <div class="text post__namedate">
+                      <p class="text text--bold-body">Melissa Bay</p>
+                      <p class="text text--grey-body">3h ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-right-align left-right-align--border">
+                  <div class="text notification notification--report">
+                    <img class="report-flag" src="Assets/Report.svg" />Report
+                  </div>
+                </div>
+              </div>
+              <p class="text">
+                I’ve always been a perfectionist, but lately i’ve been dabbling
+                with the idea of just releasing my product and iterating as I
+                go.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="card">
+          <section class="post__text-only">
+            <div class="post__wrapper">
+              <div class="side-by-side side-by-side--bot-margin">
+                <div class="left-right-align">
+                  <div class="post__pic-namedate">
+                    <div class="post__pic">
+                      <img src="Assets/User Avatar 06.svg" class="icon" />
+                    </div>
+                    <div class="text post__namedate">
+                      <p class="text text--bold-body">David Rug</p>
+                      <p class="text text--grey-body">6h ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-right-align left-right-align--border">
+                  <div class="text notification notification--report">
+                    <img class="report-flag" src="Assets/Report.svg" />Report
+                  </div>
+                </div>
+              </div>
+              <img class="post__image" src="Assets/Image.png" />
+              <p class="text">
+                I’ve always been a perfectionist, but lately i’ve been dabbling
+                with the idea of just releasing my product and iterating as I
+                go.
+              </p>
+            </div>
           </section>
         </div>
       </div>
       <div class="main-body-columns__right">
         <div class="card">
           <section class="livestream">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-              ducimus! Earum id similique repellendus repudiandae non voluptates
-              quisquam vitae rem! Repellat eos possimus officiis aut doloribus
-              modi enim, porro beatae. Repellendus dolore quisquam accusamus
-              consequatur, veniam recusandae alias praesentium ut.
-            </p>
+            <img src="Assets/Livestream.svg" />
           </section>
         </div>
         <div class="card">
@@ -118,30 +164,32 @@
             <h1 class="text text--grey-heading">🔥 Trending Posts</h1>
             <div class="trending__wrapper">
               <div class="trending__post">
-                <p class="text text--bold-body">
+                <p class="text text--bold-body text--margin-bot">
                   A list of websites to practice your skills.
                 </p>
-                <div class="trending__subscript">
-                  <p class="text text--grey-body text--float">David Rug</p>
-                  <p class="text text--grey-body text--float">6h ago</p>
+                <div class="side-by-side">
+                  <p class="text text--grey-body left-right-align">David Rug</p>
+                  <p class="text text--grey-body left-right-align">6h ago</p>
                 </div>
               </div>
               <div class="trending__post">
-                <p class="text text--bold-body">
+                <p class="text text--bold-body text--margin-bot">
                   Migrating to Next.js has been the best move.
                 </p>
-                <div class="trending__subscript">
-                  <p class="text text--grey-body text--float">May Day</p>
-                  <p class="text text--grey-body text--float">2d ago</p>
+                <div class="side-by-side">
+                  <p class="text text--grey-body left-right-align">May Day</p>
+                  <p class="text text--grey-body left-right-align">2d ago</p>
                 </div>
               </div>
               <div class="trending__post">
-                <p class="text text--bold-body">
+                <p class="text text--bold-body text--margin-bot">
                   Referral Marketing grew our project by 240%
                 </p>
-                <div class="trending__subscript">
-                  <p class="text text--grey-body text--float">Sarah Jack</p>
-                  <p class="text text--grey-body text--float">4h ago</p>
+                <div class="side-by-side">
+                  <p class="text text--grey-body left-right-align">
+                    Sarah Jack
+                  </p>
+                  <p class="text text--grey-body left-right-align">4h ago</p>
                 </div>
               </div>
             </div>

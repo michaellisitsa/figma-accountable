@@ -11,23 +11,27 @@
   </head>
   <body>
     <header class="header">
+      <!-- <div class="header__container"> -->
       <div class="header__container header__container--left-aligned">
-        <i class="logo logo--website"></i>
+        <img class="logo logo--website" src="Assets/Logo.svg" />
       </div>
       <div class="header__container header__container--center-aligned">
         <nav class="menu">
           <ul class="menu__links">
-            <li>Feed</li>
-            <li>Milestones</li>
-            <li>Groups</li>
+            <li class="menu__link-items">Feed</li>
+            <li class="menu__link-items">Milestones</li>
+            <li class="menu__link-items">Groups</li>
           </ul>
         </nav>
       </div>
       <div class="header__container header__container--right-aligned">
-        <button class="button button--notification-bell">Bell ring</button>
+        <div class="icon icon--border">
+          <img class="icon--image" src="Assets/Notification.svg" />
+        </div>
         <img src="Assets/User Avatar 01.svg" class="icon icon--right-margin" />
         <a class="link link--account-holder">Evans Jerry</a>
       </div>
+      <!-- </div> -->
     </header>
     <div class="main-body-columns">
       <div class="main-body-columns__left">
@@ -122,7 +126,7 @@
                 with the idea of just releasing my product and iterating as I
                 go.
               </p>
-              <div class="social-footer">
+              <div class="social--footer">
                 <div class="text notification notification--inline">
                   <img
                     class="notification__symbol"
@@ -135,8 +139,10 @@
                     notification notification__symbol notification--inline
                   "
                 >
-                  <img class="notification__symbol" src="Assets/Logo.svg" />24
-                  reactions
+                  <img
+                    class="notification__symbol"
+                    src="Assets/Reaction.svg"
+                  />24 reactions
                 </div>
               </div>
             </div>
@@ -171,7 +177,7 @@
                 Just released a blog on how and where to practice your frontend
                 development skills. It’s a list of 7 websites.
               </p>
-              <div class="social-footer">
+              <div class="social--footer">
                 <div class="text notification notification--inline">
                   <img
                     class="notification__symbol"
@@ -184,8 +190,10 @@
                     notification notification__symbol notification--inline
                   "
                 >
-                  <img class="notification__symbol" src="Assets/Logo.svg" />24
-                  reactions
+                  <img
+                    class="notification__symbol"
+                    src="Assets/Reaction.svg"
+                  />24 reactions
                 </div>
               </div>
             </div>
@@ -193,9 +201,42 @@
         </div>
       </div>
       <div class="main-body-columns__right">
-        <div class="card">
+        <div class="card card--livestream">
           <section class="livestream">
-            <img src="Assets/Livestream.svg" />
+            <img class="livestream__image" src="Assets/Livestream.svg" />
+            <div class="livestream__social-wrapper">
+              <div class="social--header">
+                <div
+                  class="
+                    small-text
+                    notification
+                    notification--livestream
+                    notification--inline
+                    notification--live
+                  "
+                >
+                  Live
+                </div>
+                <div
+                  class="
+                    small-text
+                    notification
+                    notification--livestream
+                    notification__symbol--eye
+                    notification__symbol--grey-background
+                    notification--inline
+                  "
+                >
+                  <img
+                    class="small-text notification__symbol"
+                    src="Assets/Eye.svg"
+                  />2,132
+                </div>
+              </div>
+            </div>
+            <div class="livestream__message text text--bold-body">
+              My journey from $0 MRR to $10,000 MRR
+            </div>
           </section>
         </div>
         <div class="card">

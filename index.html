@@ -22,18 +22,27 @@
         </nav>
       </div>
       <div class="header__container header__container--right-aligned">
-        <div class="icon--inline-wrapper">
+        <div class="icon--inline-wrapper icon--desktop">
           <div class="icon icon--border">
             <img class="icon--image" src="Assets/Notification.svg" />
           </div>
         </div>
-        <img src="Assets/User Avatar 01.svg" class="icon icon--right-margin" />
-        <a class="link link--account-holder text text--user">Evans Jerry</a>
+        <img
+          src="Assets/User Avatar 01.svg"
+          class="icon icon--right-margin icon--desktop"
+        />
+        <a class="link link--account-holder text text--user icon--desktop"
+          >Evans Jerry</a
+        >
+        <img
+          src="Assets/Hamburger Menu.svg"
+          class="icon--right-margin icon--mobile"
+        />
       </div>
     </header>
-    <div class="main-body-columns">
-      <div class="main-body-columns__left">
-        <div class="card">
+    <div class="main-body-columns" id="main-body-columns">
+      <div class="main-body-columns__left" id="main-body-columns__left">
+        <div class="card card--milestones" id="card--milestones">
           <section class="milestones">
             <h1 class="text text--grey-heading">Milestones</h1>
             <div class="milestones__wrapper">
@@ -198,7 +207,11 @@
           </section>
         </div>
       </div>
-      <div class="main-body-columns__right">
+      <div
+        class="main-body-columns__mobile"
+        id="main-body-columns__mobile"
+      ></div>
+      <div class="main-body-columns__right" id="main-body-columns__right">
         <div class="card card--livestream">
           <section class="livestream">
             <img class="livestream__image" src="Assets/Livestream.svg" />
@@ -237,7 +250,7 @@
             </div>
           </section>
         </div>
-        <div class="card">
+        <div class="card card--trending" id="card--trending">
           <section class="trending">
             <h1 class="text text--grey-heading">🔥 Trending Posts</h1>
             <div class="trending__wrapper">

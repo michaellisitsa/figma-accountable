@@ -114,6 +114,10 @@ p {
   align-items: center;
 }
 
+.icon--mobile {
+  display: none;
+}
+
 .icon {
   display: inline-block;
 }
@@ -412,14 +416,39 @@ p {
     width: inherit;
   }
 
+  .main-body-columns__mobile {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .card--milestones {
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  .card--trending {
+    width: 50%;
+    margin-left: 10px;
+  }
+
   .livestream__image {
     width: calc(100vw - 80px);
   }
   .logo--website {
     margin-left: 40px;
   }
-  .header__container--right-aligned,
   .header__container--center-aligned {
+    display: none;
+  }
+  .header__container--right-aligned {
+    margin-right: 40px;
+  }
+
+  .icon--mobile {
+    display: inline-block;
+  }
+
+  .icon--desktop {
     display: none;
   }
 }
@@ -436,6 +465,24 @@ p {
     margin: 42px 0 0;
   }
 
+  .header__container--right-aligned {
+    margin-right: 20px;
+  }
+
+  .main-body-columns__mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card--milestones {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .card--trending {
+    width: 100%;
+    margin-left: 0;
+  }
   .logo--website {
     margin-left: 20px;
   }

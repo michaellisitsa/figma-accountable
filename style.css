@@ -16,6 +16,8 @@ html {
 
 :root {
   --navHeight: 72px;
+  --edge-padding: 40px;
+  --headerSpacing: 15px;
 }
 
 body {
@@ -84,34 +86,44 @@ p {
 }
 
 .header {
-  display: flex;
-  position: sticky;
-  top: 0;
   background-color: white;
-  overflow: hidden;
-  width: 100%;
-  height: var(--navHeight);
+  padding: 0 var(--edge-padding);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--headerSpacing);
+}
+
+.logo-wrapper {
+  width: 25%;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
   align-items: center;
 }
-/* 
-.header__container {
-  position: relative;
-} */
 
 .header__container--center-aligned {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex: 1;
+  justify-content: center;
 }
 
 .header__container--right-aligned {
-  position: absolute;
-  right: 0;
   display: flex;
-  margin-right: 100px;
-  justify-content: center;
+  width: 33%;
   align-items: center;
+  justify-content: right;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .icon--mobile {
@@ -145,17 +157,11 @@ p {
 
 .menu__link-items {
   display: inline;
-  margin: 24px;
+  margin: 0 24px;
   font-size: 18px;
   font-weight: 400;
   color: #65676b;
-}
-
-.logo--website {
-  height: 30px;
-  width: 30px;
-  margin: auto;
-  margin-left: 100px;
+  list-style-type: none;
 }
 
 .main-body-columns {
@@ -321,11 +327,12 @@ p {
 }
 
 .notification:first-child {
-  margin-right: 4px;
+  margin-right: 10px;
 }
 
 .notification--inline {
   display: inline-block;
+  margin: 0;
 }
 
 .notification--live {
@@ -336,7 +343,6 @@ p {
   display: inline;
   margin-right: 10px;
   justify-items: center;
-  max-height: 16px;
 }
 
 .notification__symbol--eye {
@@ -346,6 +352,7 @@ p {
 
 .social--footer {
   margin-top: 16px;
+  display: flex;
 }
 
 .livestream__social-wrapper {
@@ -434,14 +441,13 @@ p {
   .livestream__image {
     width: calc(100vw - 80px);
   }
-  .logo--website {
-    margin-left: 40px;
-  }
+
   .header__container--center-aligned {
     display: none;
   }
+
   .header__container--right-aligned {
-    margin-right: 40px;
+    flex: 1;
   }
 
   .icon--mobile {
@@ -465,10 +471,6 @@ p {
     margin: 42px 0 0;
   }
 
-  .header__container--right-aligned {
-    margin-right: 20px;
-  }
-
   .main-body-columns__mobile {
     display: flex;
     flex-direction: column;
@@ -483,9 +485,7 @@ p {
     width: 100%;
     margin-left: 0;
   }
-  .logo--website {
-    margin-left: 20px;
-  }
+
   .livestream__image {
     width: 100vw;
   }

@@ -11,33 +11,37 @@
   </head>
   <body>
     <header class="header">
-      <img class="logo logo--website" src="Assets/Logo.svg" />
-      <div class="header__container header__container--center-aligned">
-        <nav class="menu">
-          <ul class="menu__links">
-            <li class="menu__link-items">Feed</li>
-            <li class="menu__link-items">Milestones</li>
-            <li class="menu__link-items">Groups</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__container header__container--right-aligned">
-        <div class="icon--inline-wrapper icon--desktop">
-          <div class="icon icon--border">
-            <img class="icon--image" src="Assets/Notification.svg" />
+      <div class="header-container">
+        <div class="logo-wrapper"><a href="#" class="logo"></a><img class="logo logo--website" src="Assets/Logo.svg" /></a></div>
+        <div class="menu-content">
+          <div class="header__container header__container--center-aligned">
+            <nav class="menu">
+              <ul class="menu__links">
+                <li class="menu__link-items">Feed</li>
+                <li class="menu__link-items">Milestones</li>
+                <li class="menu__link-items">Groups</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__container header__container--right-aligned">
+            <div class="icon--inline-wrapper icon--desktop">
+              <div class="icon icon--border">
+                <img class="icon--image" src="Assets/Notification.svg" />
+              </div>
+            </div>
+            <img
+              src="Assets/User Avatar 01.svg"
+              class="icon icon--right-margin icon--desktop"
+            />
+            <a class="link link--account-holder text text--user icon--desktop"
+              >Evans Jerry</a
+            >
+            <img
+              src="Assets/Hamburger Menu.svg"
+              class="icon--right-margin icon--mobile"
+            />
           </div>
         </div>
-        <img
-          src="Assets/User Avatar 01.svg"
-          class="icon icon--right-margin icon--desktop"
-        />
-        <a class="link link--account-holder text text--user icon--desktop"
-          >Evans Jerry</a
-        >
-        <img
-          src="Assets/Hamburger Menu.svg"
-          class="icon--right-margin icon--mobile"
-        />
       </div>
     </header>
     <div class="main-body-columns" id="main-body-columns">
@@ -133,7 +137,7 @@
                 with the idea of just releasing my product and iterating as I
                 go.
               </p>
-              <div class="social--footer">
+              <footer class="social--footer">
                 <div class="text notification notification--inline">
                   <img
                     class="notification__symbol"
@@ -151,7 +155,7 @@
                     src="Assets/Reaction.svg"
                   />24 reactions
                 </div>
-              </div>
+              </footer>
             </div>
           </section>
         </div>
